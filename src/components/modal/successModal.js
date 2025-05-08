@@ -1,5 +1,5 @@
 import Image from "next/image";
-import result from "../../images/illustration-thank-you.svg"
+import success from "../../images/illustration-thank-you.svg"
 import React from "react";
 
 export const SuccessModal = ({ isOpen, onClose, children, className = "" }) => {
@@ -11,9 +11,9 @@ export const SuccessModal = ({ isOpen, onClose, children, className = "" }) => {
   };
 
   return (
-    <div className={`fixed inset-0 bg-opacity-50 flex items-center justify-center z-50`}>
+    <div className={`bg-black fixed inset-0 flex items-center justify-center z-90`}>
       <div className={`container items-center ${className}`}>
-        <div className="m-2 w-35"><Image src={result} alt=""/></div>
+        <div className="m-2 w-35"><Image src={success} alt=""/>success-icon</div>
         <span className="bg-gray-700 rounded-2xl px-4 py-1">{children}</span>
         <div className="text-2xl -mb-2 font-normal animate-pulse">Thank You!</div>
         <div className="para text-center text-[#959eac]">We appreciate you taking the time to give a rating. If you ever need more support, 

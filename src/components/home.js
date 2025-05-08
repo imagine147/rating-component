@@ -23,7 +23,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="w-full">
+    <div className="">
       <div className="container">
         <div className="image">
           <Image src={image} alt="star-icon" />
