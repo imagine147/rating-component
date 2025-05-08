@@ -45,7 +45,7 @@ export default function Hero() {
               aria-label={`Rate ${num} out of 5`}
               onClick={() => handleRating(num)}
               onKeyDown={(e) => e.key === "Enter" && handleRating(num)}
-              className={`num w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-orange-500 hover:text-black ${
+              className={`num w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-[#fb7413] hover:text-black ${
                 rating === num ? "bg-white text-black" : "bg-gray-800 text-white"
               }`}
             >
@@ -56,7 +56,7 @@ export default function Hero() {
 
         <button
           className={`btn mt-4 py-2 px-4 rounded text-white cursor-pointer hover:bg-white transition-all ${
-            submittedRating ? "bg-white text-black" : "bg-orange-500"
+            submittedRating ? "bg-white text-black" : "bg-[#fb7413]"
           }`}
           onClick={handleSubmit}
         >
